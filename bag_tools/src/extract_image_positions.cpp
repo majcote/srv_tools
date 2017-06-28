@@ -80,9 +80,9 @@ public:
     double lon      = nav_sts_msg->position.east;
     double depth    = nav_sts_msg->position.depth;
     double altitude = nav_sts_msg->altitude;
-    double roll     = nav_sts_msg->orientation.roll;
-    double pitch    = nav_sts_msg->orientation.pitch;
-    double yaw      = nav_sts_msg->orientation.yaw;
+    double roll     = nav_sts_msg->orientation.x;
+    double pitch    = nav_sts_msg->orientation.y;
+    double yaw      = nav_sts_msg->orientation.z;
 
     std::stringstream ss;
     ss << std::setw(6) << std::setfill('0') << count_;
